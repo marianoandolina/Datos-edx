@@ -1,0 +1,17 @@
+- Gestores de bases de datos
+
+Los gestores de bases de datos son el intermediario entre las bases de datos y los usuarios.
+Su función es facilitar la administración con herramientas como la búsqueda, actualización, eliminación de contenido entre muchas cosas más. 
+Si bien todos los gestores de bases de datos relacionales están diseñados para poder programar en SQL existen ligeras diferencias en la programación, 
+sintaxis y desempeño entre cada una de las opciones.
+
+Por ejemplo:
+SQLite es mucho más eficiente para bases de datos relativamente pequeñas en comparación a PostgreSQL, sin embargo este último nos permite ser un poco 
+más versátiles al momento de declarar tipos de datos y tiende a ser más robusto en cuanto a seguridad.
+
+Tomando en cuenta lo anteriormente mencionado hay que considerar que no existe un gestor de bases de datos que sea mejor que todos los demás; 
+la decisión sobre cuál elegir y en cuál trabajar está a consideración del administrador de bases de datos (generalmente) y dependerá del tipo 
+de proyecto a realizar así como del presupuesto, pues algunos gestores de marcas reconocidas ofrecen características premium pero bajo un determinado costo.
+
+Los gestores de bases de datos no están cerrados a modelos relacionales así que si estás pensando realizar un proyecto en un modelo no relacional, 
+seguramente existe un gestor que te facilitará todo el trabajo.

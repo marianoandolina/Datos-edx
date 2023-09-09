@@ -1,0 +1,41 @@
+Conceptos básicos del modelo relacional
+El modelo relacional de las bases de datos intenta, de una manera aproximada, representar situaciones de la vida real a través de las entidades, atributos y relaciones.
+
+De una manera práctica, podemos entender estos tres conceptos de la siguiente manera:
+
+Entidades:
+Situación u objeto con características físicas (una persona, una fruta, un día, etc).
+
+Atributos:
+Son las características de los atributos (color, olor, tamaño, etc.).
+
+Relaciones:
+Como el nombre sugiere, aquí se relacionan dos entidades con sus respectivos atributos. (la entidad perro se relaciona con la entidad comida para perro).
+
+Si se analiza bien, casi todo puede considerarse como una entidad ya que solo se necesita que cuente con características. Veamos el siguiente ejemplo: 
+La entidad persona tiene el atributo manos, sin embargo las manos podrían ser consideradas entidades por sí mismas, ya que tienen los atributos número 
+de dedos, color, tamaño, peso, y sucesivamente sus atributos cuentan con atributos… ¿Cómo identificamos entonces a qué debemos nombrar como entidad? 
+La respuesta es más clara de lo que crees, pues todas las entidades establecidas en la base de datos tienen que estar relacionadas, obviamente, a 
+la base de datos. Es decir, si vamos a hacer una base de datos enfocada a personas de una manera muy general, me es muy poco útil estar describiendo sus manos.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Diseño de esquemas de bases de datos relacionales
+
+En el ámbito de las bases de datos, la robustez hace referencia a lo resistente que es un sistema ante fallos de programación o ataques de seguridad, 
+mientras que la cardinalidad es el número de registros con los cuales una instancia específica puede crear relaciones con otras entidades.
+
+Los tipos de cardinalidad son uno a uno, uno a muchos, muchos a muchos, o 0 si es que no existe relación entre la entidad trabajada con otra tabla.
+Los tipos de relación explican, como su nombre explica, la clasificación de la relación existente entre tablas. Existen tres tipos de relaciones:
+
+Uno a uno:
+Es una relación que se explica cuando un registro de una tabla tiene un vínculo con solamente un registro de otra tabla. (Cuando te registras en el banco, 
+tú solamente puedes tener un número de cliente, y un número de cliente solamente puede ser asociado con una persona).
+
+Uno a muchos:
+Se define como un único registro de una tabla que tiene un vínculo con más de un registro de otra tabla. (Un cliente de un banco puede realizar más de una 
+transacción bancaria. Es decir, habría muchas transacciones bancarias asociadas a solamente un usuario).
+
+Muchos a muchos:
+Se define como varios registros teniendo más de un solo vínculo con registros de otra tabla y viceversa. (Un empleado del banco puede trabajar en más de 
+una sucursal, y una sucursal puede tener a más de un trabajador).

@@ -1,0 +1,49 @@
+
+- Bases de datos relacionales y no relacionales
+
+Aunque muchas veces utilicemos los términos indiscriminadamente, es necesario que logremos identificar qué son y en qué se diferencian los 
+conceptos de datos, información, y conocimiento:
+
+Los datos:
+Representan valores o características de un objeto en específico de la manera más simple posible.
+
+Por ejemplo:
+"21", "Mario", "Mérida"
+
+La información:
+Resultado obtenido después del análisis y discriminación de los datos.
+
+Por ejemplo:
+"Mario tienen 20 años y vive en la ciudad de Mérida"
+
+El conocimiento:
+Análisis profundo con base en la información, muchas veces complementado con información proveniente de otras fuentes para poder darle mayor utilidad.
+
+Por ejemplo:
+"Como Mario ya tiene 21 años y vive en la ciudad de Mérida, Mario podrá participar en las votaciones de este año".
+
+Lo más interesante sobre este tema es que los datos están en todas partes, solo necesitas prestar atención. Cuando vas al supermercado te entregan 
+un ticket con los DATOS de tu compra, cuando vas a un museo te piden tus DATOS de registro… los ejemplos sobran, pero estamos tan acostumbrados a ceder 
+nuestros datos que la mayoría de las veces no nos damos cuenta.
+
+Existen muchos tipos de datos y muchas clasificaciones distintas, por ejemplo, existen datos numéricos, referentes a fechas, a propiedades matemáticas, etc. 
+Es por esta gran variedad y diferencias que nos es imposible tener un único tipo de almacenamiento de datos para todos estos. Debido a esto es que actualmente 
+contamos con dos campos enormes en el área de las bases de datos, las cuales son las bases relacionales y las no relacionales:
+
+- Bases de datos relacionales:
+
+La característica principal de este tipo de bases de datos es que cuentan con una estructura fija y, como se podrá intuir por el nombre, están fundamentadas 
+en los principios del modelo relacional. El modelo relacional es explicado en detalle en las unidades siguientes, sin embargo, vale la pena entender que su 
+idea principal es la utilización de relaciones entre entidades y atributos. Este tipo de bases de datos son fácilmente identificables, ya que son representadas 
+en tablas con filas y columnas. Su practicidad de elaboración y utilización hacen que sean de las más populares del mercado, sin embargo (y dependiendo del proyecto) 
+la rigurosidad de sus características pueden llegar a hacer que un proyecto elaborado en este tipo de modelos sea difícil de escalar.
+
+- Bases de datos no relacionales:
+
+Dentro de esta clasificación se encuentran todos las bases de datos que cuentan con un esquema mucho más flexible en comparación con las bases de datos relacionales, 
+es decir, no necesariamente cuentan con una estructura fija definida, ni el almacenamiento de datos es tan fácil o común, como lo sería en los modelos relacionales. 
+De una manera muy burda, se pueden identificar por medio de su representación en forma de tablas, ya que es muy ineficiente y en muchos casos imposible, 
+sin embargo su flexibilidad comúnmente provee a los administradores de bases de datos de una facilidad de almacenamiento o escalabilidad mucho mayor. 
+Cabe mencionar que no existe solamente un tipo de base de datos no relacional, sino que esta definición abarca una agrupación de modelos de esquema flexible que 
+como no tienen su bases fundamentadas en el modelo relacional no son consideradas relacionales. Aquí podemos encontrar las bases de datos orientadas a grafos, 
+las orientadas a objetos, entre muchas otras.

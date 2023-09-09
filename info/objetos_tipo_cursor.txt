@@ -1,0 +1,33 @@
+Objetos de tipo cursor
+Si bien cuando nosotros utilizamos una función propia de alguna librería (justo como cuando usamos el .connect() de sqlite3) podemos utilizar parámetros para elevar 
+en detalle nuestro código de ser necesario, es hay que destacar que en la documentación original de sqlite el método .cursor() solamente acepta un parámetro que es 
+totalmente opcional y es el factory. De ser utilizado, debe ser una instancia de un cursor o de sus subclases.
+
+.cursor(factory = Cursor)
+
+De nueva cuenta, este parámetro es totalmente opcional y es el único que se reconoce dentro de la función .cursor(). Para conocer sobre las instancias del cursor o 
+de sus subclases para utilizar el parámetro factory recomendamos ampliamente visitar la documentación oficial, ya que este es un tema mucho más profundo para un 
+manejo especializado de bases de datos y de los objetos de tipo cursor.
+
+En Python podemos acceder a los métodos y atributos de un objeto a través del punto ".", así que si nosotros programamos un objeto llamado Persona con sus propios 
+métodos y atributos, esto es lo que sucedería:
+
+Persona.nombre
+
+Estamos accediendo al nombre de una persona (atributo)
+
+Persona.canta
+
+Estamos ejecutando una función propia de la persona (método)
+
+Los objetos de tipo cursor no son la excepción a la regla, por lo que al momento de ejecutar.
+
+cursor = bdpeliculas.cursor()
+
+Justo como lo hicimos en el ejemplo explicado en el video, estamos creando un objeto el cual tiene sus propios atributos y métodos. Así cuando nosotros ejecutemos:
+
+cursor.execute('SELECT columna FROM tabla')
+
+Ya sabemos que nuestro objeto cursor está ejecutando un método llamado "execute" que lo que hace es correr comandos de SQL, y como podemos imaginar, este no es 
+el único método de los cursores, por lo que es ampliamente recomendado el visitar la documentación oficial de sqlite3 para conocer todos los métodos, atributos, 
+y descripciones de cada objeto.

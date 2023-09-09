@@ -1,0 +1,25 @@
+Dependencias funcionales
+Las 5 FN (Formas Normales) son un conjunto de normas a seguir con la intención de normalizar nuestras bases de datos.
+Cuando hablamos de normalización de bases de datos, nos referimos a evitar su redundancia para que nos sea mucho más fácil trabajar con ellas.
+
+Si bien se pueden encontrar ciertas diferencias entre las descripciones y el número de las formas normales dependiendo de la fuente, los principios
+siguen siendo los mismos. La UNAM utiliza las siguientes descripciones y divisiones de 3FN:
+
+Normalización de Bases de Datos
+
+En base de datos, la definición de relaciones funcionales guarda una profunda relación con la definición matemática de una función común y corriente. 
+Según el Doctor José Becerra, quien es catedrático de la UNAM, una función puede ser representada de la siguiente manera:
+
+Relaciones funcionales
+En donde existen dos conjuntos, el del dominio y el codominio (comúnmente llamado rango) y cumplen con las siguientes condiciones:
+
+a) A todo elemento del dominio se le puede asociar un elemento del codominio.
+b) Ningún elemento del dominio puede quedarse sin un asociado en el codominio.
+c) Ningún elemento del dominio puede tener más de un asociado en el codominio.
+
+
+Lo mismo sucede en las bases de datos, existe un conjunto dependiente y uno dependiente y cumplen con las condiciones establecidas antes. 
+Por ejemplo, si el banco conoce tu número de cuenta, igualmente sabe tu nombre, dirección, etc. Es decir, {nombre, dirección, etc} depende del número de cuenta y no viceversa.
+
+Número de cuenta ⇒ {Nombre, dirección, etc.}
+Y se cumplen las condiciones de que cada número de cuenta hace referencia a un cliente y no existe un número de cuenta único que haga referencia a dos clientes distintos.

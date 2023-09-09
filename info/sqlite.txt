@@ -1,0 +1,14 @@
+Introducción a SQLite3
+
+Para empezar a darnos una idea en cuanto a las diferencias en limitaciones de tamaño que tiene SQLite, toma en cuenta la siguiente comparación:
+El gestor de bases de datos de Microsoft, SQL Server Workgroup, ofrece alcance para una base de datos de hasta 524 petabytes, mientras que con 
+SQLite solamente puedes manejar una base de datos de hasta 2 Gigabytes (en la mayoría de las versiones). Es decir, con el gestor de Microsoft 
+podrías guardar una base de datos 2.62 × 10⁸ veces más grande.
+
+Si tienes interés por conocer más a fondo las limitaciones de SQLite en comparación a las versiones completas de SQL, en el siguiente artículo de 
+William D Galindo encontrarás información más detallada en cuanto a limitaciones de tablas, bases de datos, performance, etc. ¿Qué volumen de datos puede manejar SQLite?
+
+Hay que recordar que SQLite es de código abierto, por lo que muchas modificaciones que podemos encontrar disponibles hoy en día muy probablemente 
+fueron realizadas por desarrolladores ajenos a este equipo de trabajo. SQLite es más un producto comunitario. Si bien al finalizar el curso se espera
+que los estudiantes cuenten con un entendimiento sólido en temas relacionados a bases de datos así como de técnicas de manipulación de las mismas, 
+vale mucho la pena mencionar que en la documentación oficial ( SQLite Home Page) podemos encontrar contenidos muy útiles referentes a temas y métodos más especializados.

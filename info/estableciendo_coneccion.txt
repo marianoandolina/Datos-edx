@@ -1,0 +1,15 @@
+Instalación y establecimiento de conexión
+Con respecto a la función .connect() de la librería sqlite3 podemos mencionar que cuenta con parámetros adicionales para que la carga de tu base de datos sea 
+aún más específica en cuanto a la utilización que quieras o necesites darle.
+
+Existe por ejemplo el parámetro timeout, el cual especifica el tiempo de espera máximo para intentar conectar con la base de datos antes de avisar de un error.
+ El tiempo de espera por defecto es de cinco segundos, después de este tiempo si no se logra establecer la conexión se mostrará un error. Se podría definir de 
+ la siguiente manera para establecer el timeout en tres segundos:
+
+sqlite.connect(‘pelicuas.db’, timeout = 3)
+
+Para conocer todos los parámetros disponibles para especificar aún más tu conexión recomendamos ampliamente consultar la documentación oficial en esta función.
+
+SQLite y Python son dos de los lenguajes de programación más usados por los desarrolladores a nivel mundial, por lo que es muy fácil poder hacernos de documentación 
+para poder utilizarlo de manera correcta. sqlite3 cuenta con su propia documentación oficial proveniente de Python, en donde se pueden encontrar sus funciones con 
+sus respectivos parámetros, así como una breve explicación de su operatividad. He aquí el sitio oficial sqlite3 — DB-API 2.0 interface for SQLite databases — Python 3.9.5 documentation

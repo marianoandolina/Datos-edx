@@ -1,0 +1,35 @@
+SQL, ¿Qué es y cuándo usarlo?
+El Structured Query Language, SQL (o muy comúnmente pronunciado SEQUEL), nació por primera vez como resultado de un proyecto derivado de la compañía IBM a principios 
+de la década de los setentas.
+Existen muchos gestores de bases de datos que enfocan el uso de este lenguaje a necesidades más especializadas dependiendo del proyecto a desarrollar, tal como el 
+gestor SQLserver creado por Microsoft, que como su nombre especifica, está enfocado más bien al uso de servidores.
+
+La lista de compañías que hoy en día utilizan SQL de manera industrial es enorme, y entre ellas encontramos a gigantes de la tecnología como lo son Google, Facebook, 
+Youtube, entre muchos otros.
+
+Cuando se habla del nivel o de la generación de un lenguaje de programación se hace referencia a lo fácil que es entender su sintaxis; esto significa que su nivel 
+de abstracción es más alto y por lo tanto las instrucciones dadas para que se desempeñe una acción son mucho más generales.
+
+Por ejemplo:
+Este es el código para poder imprimir en pantalla un “hello world” en lenguaje Java:
+
+------------------------------------------------
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}
+
+Este es el código para hacer lo mismo en python: 
+
+print("Hello world") 
+
+------------------------------------------------
+
+Como podemos ver, en Python es mucho más fácil poder entender lo que el código hace con tan solo verlo, sin tener que ser expertos programadores. 
+Python es considerado un lenguaje de 4ta generación, o sea, un alto nivel.
+
+Para dar una idea de lo fácil que es entender el lenguaje SQL, con el siguiente código podríamos obtener la información de la columna columna de un tabla llamada tabla.
+
+SELECT columna FROM tabla
