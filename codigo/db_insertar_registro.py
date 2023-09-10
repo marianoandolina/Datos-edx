@@ -1,4 +1,14 @@
-# sentencias vistas en este documento PRAGMA, CREATE TABLE, ALTER TABLE, DROP TABLE, INSERT INTO, VALUES, CONSTRAINT
+""" 
+Sentencias vistas en este documento 
+
+PRAGMA
+CREATE TABLE
+ALTER TABLE
+DROP TABLE 
+INSERT INTO 
+VALUES
+CONSTRAINT
+"""
 
 import os
 import sqlite3
@@ -9,7 +19,7 @@ print(os.getcwd())
 # creamos la funcion que va a crear la base de datos y establecer la conexion
 def conectar():
     try:
-        conexion = sqlite3.connect(r'C:\Users\maria\Desktop\Programacion\python\datos_python_edx\db\mydatabase.db')
+        conexion = sqlite3.connect(r'C:\Users\maria\OneDrive\Escritorio\Programacion\Python\Datos-edx\db\mydatabase.db')
         conexion.execute('PRAGMA foreing_keys = ON')
         print('Conexion establecida')
         return conexion
@@ -23,6 +33,7 @@ def CrearTabla(conexion):
     conexion.execute('CREATE TABLE datosContacto(ide integer PRIMARY KEY, estudiante integer, telefono1 text, telefono2 text, correo text, CONSTRAINT fk_contactoEstudiante FOREIGN KEY (estudiante) REFERENCES estudiante (matricula))')
     print('Tabla(s) Creadas')
 
+# creamos la funcion para modificar la tabla
 def modificarTabla(conexion):
     conexion.execute('ALTER TABLE estudiante ADD COLUMN carrera text not null') # Agregamos la columna carrera
     conexion.execute('ALTER TABLE estudiante ADD COLUMN grado integer not null') # Agregamos la columna grado
@@ -41,6 +52,7 @@ def eliminarTabla(conexion):
     conexion.commit()
     print('Tabla eliminada')
 
+# creamos la funcion para insertar un registro
 def insertarRegistro(conexion):
     conexion.execute("INSERT INTO estudiante (nombre, apellido, fechaInicio, promedio, carrera, grado, grupo) VALUES('Jose','Rodriguez Perez','2021-06-09','8.75','Ingenieria industrial', 1, 'G')")
     conexion.execute("INSERT INTO estudiante (nombre, apellido, fechaInicio, promedio, carrera, grado, grupo) VALUES('Maria','Cruz Velazquez','2018-01-15','9.72','Licenciatura en Enfermeria', 6, 'B')")
@@ -49,6 +61,7 @@ def insertarRegistro(conexion):
     conexion.commit()
     print('Registro(s) insertado')
 
+# creamos la funcion para modificar un registro
 def  modificarRegsitro(conexion, matricula, nombre, telefono):
     conexion.execute("UPDATE estudiante SET nombre = '"+nombre+"' WHERE matricula = "+str(matricula))
     conexion.execute("UPDATE datosContacto SET telefono1 = '"+telefono+"' WHERE estudiante = "+str(matricula))
@@ -66,7 +79,7 @@ con = conectar()
 # llamamos a la funcion para inseratar un registro
 # insertarRegistro(con)
 
-modificarRegsitro(con, 1, 'Juan', '45553801')
+modificarRegsitro(con, 2, 'Joaquina', '47530102')
 
 # por ultimo al terminar cerramos la conexion con la base de datos
 #con.close()

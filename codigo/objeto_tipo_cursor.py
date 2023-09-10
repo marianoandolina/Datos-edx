@@ -11,7 +11,7 @@ os.chdir(r"C:\Users\maria\Desktop\Programacion\python\datos_python_edx\db")
 # Comprobamos que se halla cambiado el directorio de trabajo
 print(os.getcwd())
 
-# Se establece conccion con la base de datos peliculas
+# Se establece coneccion con la base de datos peliculas
 bdpeliculas = sqlite3.connect("peliculas.db")
 
 # Se crea el objeto de tipo cursor en la variable pcursor

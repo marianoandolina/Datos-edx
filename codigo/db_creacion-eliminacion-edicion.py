@@ -1,13 +1,11 @@
 import os
 import sqlite3
-from sqlite3 import Error
 
-print(os.getcwd())
 
 # creamos la funcion que va a crear la base de datos y establecer la conexion
 def conectar():
     try:
-        conexion = sqlite3.connect(r'C:\Users\maria\Desktop\Programacion\python\datos_python_edx\db\mydatabase.db')
+        conexion = sqlite3.connect(r'C:\Users\maria\OneDrive\Escritorio\Programacion\Python\Datos-edx\db\mydatabase.db')
         conexion.execute('PRAGMA foreing_keys = ON')
         print('Conexion establecida')
         return conexion
@@ -34,12 +32,12 @@ def eliminarTabla(conexion):
     conexion.commit()
 
 con = conectar()
-# CrearTabla(con) # comentamos este campo una vez que ya creamos las tablas porque no pueden ser creadas 2 veces
+CrearTabla(con) # comentamos este campo una vez que ya creamos las tablas porque no pueden ser creadas 2 veces
 # modificamos la tabla usando la funcion modificarTabla()
 # modificarTabla(con) # una vez que ya modificamos la tabla comentamos la funcion para executar el ejemplo de eliminar tabla
 
 # eliminamos la tabla con la funcion que creamos anteriormente
-eliminarTabla(con)
+# eliminarTabla(con)
 
 # por ultimo al terminar cerramos la conexion con la base de datos
 con.close()
