@@ -67,7 +67,13 @@ def  modificarRegsitro(conexion, matricula, nombre, telefono):
     conexion.execute("UPDATE datosContacto SET telefono1 = '"+telefono+"' WHERE estudiante = "+str(matricula))
     conexion.commit()
 
-    
+def eliminarRegistro(conexion):
+    conexion.execute("DELETE FROM datosContacto WHERE estudiante = 1")
+    conexion.execute("DELETE FROM datosContacto WHERE estudiante = 2")
+    conexion.execute("DELETE FROM estudiante WHERE matricula = 2")
+    conexion.commit()
+    print("Funcion eliminarRegistro ejecutada")
+        
 con = conectar()
 # CrearTabla(con) # comentamos este campo una vez que ya creamos las tablas porque no pueden ser creadas 2 veces
 # modificamos la tabla usando la funcion modificarTabla()
@@ -79,7 +85,9 @@ con = conectar()
 # llamamos a la funcion para inseratar un registro
 # insertarRegistro(con)
 
-modificarRegsitro(con, 2, 'Joaquina', '47530102')
+# modificarRegsitro(con, 2, 'Joaquina', '47530102')
+
+eliminarRegistro(con)
 
 # por ultimo al terminar cerramos la conexion con la base de datos
 #con.close()
