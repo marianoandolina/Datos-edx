@@ -19,7 +19,8 @@ print(os.getcwd())
 # creamos la funcion que va a crear la base de datos y establecer la conexion
 def conectar():
     try:
-        conexion = sqlite3.connect(r'C:\Users\maria\OneDrive\Escritorio\Programacion\Python\Datos-edx\db\mydatabase.db')
+        conexion = sqlite3.connect(r'C:\Users\maria\Desktop\Programacion\python\datos-edx\db\mydatabase.db') # direccion pc escritorio
+        # conexion = sqlite3.connect(r'C:\Users\maria\OneDrive\Escritorio\Programacion\Python\Datos-edx\db\mydatabase.db') # direccion lenovo
         conexion.execute('PRAGMA foreing_keys = ON')
         print('Conexion establecida')
         return conexion
