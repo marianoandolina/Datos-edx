@@ -54,10 +54,11 @@ def eliminarTabla(conexion):
 
 # creamos la funcion para insertar un registro
 def insertarRegistro(conexion):
-    conexion.execute("INSERT INTO estudiante (nombre, apellido, fechaInicio, promedio, carrera, grado, grupo) VALUES('Jose','Rodriguez Perez','2021-06-09','8.75','Ingenieria industrial', 1, 'G')")
+    # conexion.execute("INSERT INTO estudiante (nombre, apellido, fechaInicio, promedio, carrera, grado, grupo) VALUES('Jose','Rodriguez Perez','2021-06-09','8.75','Ingenieria industrial', 1, 'G')")
     conexion.execute("INSERT INTO estudiante (nombre, apellido, fechaInicio, promedio, carrera, grado, grupo) VALUES('Maria','Cruz Velazquez','2018-01-15','9.72','Licenciatura en Enfermeria', 6, 'B')")
-    conexion.execute("INSERT INTO datosContacto (estudiante, telefono1, telefono2, correo) VALUES (1, '8331234567', '1552334455', 'micorreo@gmail.com')") 
-    conexion.execute("INSERT INTO datosContacto (estudiante, telefono1, telefono2, correo) VALUES (2, '0554563567', '1111234167', 'correoejemplo@gmail.com')")
+    # conexion.execute("INSERT INTO estudiante (nombre, apellido, fechaInicio, promedio, carrera, grado, grupo) VALUES('David','Sanchez Torrez','2021-06-09','7.5','Ingenieria Industrial', 1, 'G')")
+    # conexion.execute("INSERT INTO datosContacto (estudiante, telefono1, telefono2, correo) VALUES (1, '8331234567', '1552334455', 'micorreo@gmail.com')") 
+    # conexion.execute("INSERT INTO datosContacto (estudiante, telefono1, telefono2, correo) VALUES (2, '0554563567', '1111234167', 'correoejemplo@gmail.com')")
     conexion.commit()
     print('Registro(s) insertado')
 
@@ -87,7 +88,7 @@ con = conectar()
 
 # modificarRegsitro(con, 2, 'Joaquina', '47530102')
 
-eliminarRegistro(con)
+# eliminarRegistro(con)
 
 # por ultimo al terminar cerramos la conexion con la base de datos
 #con.close()

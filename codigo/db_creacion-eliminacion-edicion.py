@@ -1,5 +1,6 @@
 import os
 import sqlite3
+from sqlite3 import Error
 
 
 # creamos la funcion que va a crear la base de datos y establecer la conexion
