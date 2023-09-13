@@ -34,15 +34,16 @@ def eliminarTabla(conexion):
     conexion.commit()
 
 con = conectar()
-CrearTabla(con) # comentamos este campo una vez que ya creamos las tablas porque no pueden ser creadas 2 veces
+#CrearTabla(con) # comentamos este campo una vez que ya creamos las tablas porque no pueden ser creadas 2 veces
+
 # modificamos la tabla usando la funcion modificarTabla()
-# modificarTabla(con) # una vez que ya modificamos la tabla comentamos la funcion para executar el ejemplo de eliminar tabla
+#modificarTabla(con) # una vez que ya modificamos la tabla comentamos la funcion para executar el ejemplo de eliminar tabla
 
 # eliminamos la tabla con la funcion que creamos anteriormente
-# eliminarTabla(con)
+#eliminarTabla(con)
 
 # por ultimo al terminar cerramos la conexion con la base de datos
-con.close()
+#con.close()
 
 
 
