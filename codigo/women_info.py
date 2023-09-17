@@ -25,7 +25,7 @@ cursor = con.cursor()
 # podemos ahora comenzar a hacer consultas 
 
 consulta1 = "SELECT * FROM class WHERE Country in ('Japan','Greece','Argentina')"
-consulta2 = "SELECT Country, Inflation_rate FROM class ORDER BY Inflation_rate DESC"
+consulta2 = "SELECT * FROM class ORDER BY 'Inflation rate' DESC"
 cursor.execute(consulta2)
 filas = cursor.fetchall()
 for fila in filas:
