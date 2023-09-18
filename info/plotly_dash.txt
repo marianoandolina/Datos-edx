@@ -1,0 +1,38 @@
+
+Contexto de Plotly y Dash
+-------------------------
+
+Nuestro principal objetivo en este video es obtener algo de contexto y comprensión de las bibliotecas de visualización que existen para Python y luego comprender 
+qué es Plotly y cuándo usarlo y también comprender qué es Dash, en qué se diferencia de Plotly y cuándo usarlo.
+
+Comencemos respondiendo la pregunta, ¿qué bibliotecas ya existen para visualizar datos con Python?
+En realidad hay muchas bibliotecas de visualización. No vamos a revisar en detalle todas aquí, solo veremos algunas de las principales que tienen algunas características 
+similares a Plotly.
+
+La primera biblioteca que deberíamos discutir es Matplotlib. Esta es una especie de abuelo de todas las bibliotecas de visualización de datos para Python, y se modeló a 
+partir de Matlab, otro lenguaje de programación, y sus propias capacidades de generación de gráficas. Matplotlib sirve para crear archivos de imágenes estáticas. 
+Eso es algo así como un archivo JPEG o PNG, algo que realmente no cambia una vez que ya se ha creado. A pesar de que tiene una sintaxis compleja de aprender, 
+te permite crear casi cualquier tipo de gráfica debido a su flexibilidad.
+
+Otra biblioteca de visualización común de Python se llama Seaborn, y usa Matplotlib en el back-end. Está diseñada para crear gráficas estadísticas de buen aspecto. 
+Y nuevamente, estas son gráficas estáticas. Sin embargo, tiene una sintaxis más limpia y puede hacer gráficas realmente agradables en una sola línea de código, 
+pero solo puede crear gráficas de una lista de opciones disponibles en la documentación. Si deseas diferentes tipos de gráficas que Seaborn no admite, normalmente tendrás 
+que recurrir a Matplotlib.
+
+Luego tenemos Pandas. El propósito principal de Pandas es en realidad el análisis de datos, pero al igual que muchas otras bibliotecas en Python, vemos un tema común aquí,
+Pandas usa Matplotlib en el back-end. A través de una simple llamada de tipo .plot(), se pueden llamar dataframes de Pandas para generar gráficas. Hay un alcance limitado 
+de los tipos de gráficas que puedes hacer aquí. De nuevo, son gráficas estáticas y puedes hacerlas con una sola línea de código.
+
+Todas las gráficas que hemos mencionado hasta ahora son estáticas. Es decir, una vez que genera el archivo de imagen, no puede interactuar con él de ninguna manera. 
+Básicamente, es como crear un archivo JPEG o PNG.
+
+Uno de nuestros principales objetivos al final de este módulo es que puedas visitar la documentación de Plotly y reproducir cualquier tipo de gráfica de la documentación con 
+tus propios datos.
+Para acceder a la documentación de Plotly, debemos ir a https://plotly.com/python o buscar en Google "Plotly Python".
+
+En particular, nuestro objetivo será que puedas recorrer las secciones de los ejemplos (Fundamentals, Artificial Intelligence and Machine Learning, Basic Charts, etc.), 
+revisar tipos de gráficas específicas, entender los elementos de los ejemplos ahí presentados y poder adaptarlos a tus propios datos.
+
+Al entrar a la subsección de algún tipo específica de gráfica, por ejemplo, Box Plots, normalmente lo que encontraremos será ejemplos básicos de cómo usar el módulo plotly.express, 
+así como ejemplos de cómo integrar este tipo de gráficas con el módulo de dash, es decir, cómo embeber dicha gráfica en un dashboard, y finalmente, cómo usar el 
+módulo plotly.graph_objects para crear el tipo de gráfica en cuestión, pues este es el módulo genérico para la construcción de gráficas con Plotly.

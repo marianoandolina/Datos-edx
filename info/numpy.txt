@@ -1,0 +1,14 @@
+Introducción a NumPy
+En caso de que no tengas instalado aún NumPy, puedes instalarlo usando el comando:
+
+pip install numpy
+
+directamente en la línea de comandos.
+
+En esta unidad revisamos solo algunas funciones de NumPy que nos servirán en unidades posteriores de este módulo, pero recuerda que esta biblioteca es bastante amplia, 
+si deseas explorar otras funciones disponibles, te recomendamos revisar la documentación, en ella podrás encontrar muchos ejemplos de cosas que puedes hacer de manera 
+práctica con numpy.
+
+En general, si necesitas usar herramientas de álgebra lineal y/o cálculo para resolver algún problema, numpy es una opción muy recomendable a explorar.
+
+Aquí te dejamos el link del sitio oficial: https://numpy.org/doc/stable/user/index.html
