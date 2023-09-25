@@ -69,4 +69,37 @@ print(my_array.min())
 # le pedimos que nos muestre el promedio
 print(my_array.mean())
 
+# nos muestra el index o posicion del numero maximo en my_array
+print(my_array.argmax())
+
+# nos muestra el index o posicion del numero minimo en my_array
+print(my_array.argmin())
+
+# nos modifica la dimendion de nuestro array siempre respetando la cantidad de elementos que tiene nuestro array (10 en este caso)
+# le pedimos que muestre nuestro array en 2 filas y 5 columna
+# si queremos hacer que nos muestre mas elementos que los que tenemos en nuestro array nos va a dar error ej: (2,6) o (3,4)
+print(my_array.reshape(2,5))
+
+# creamos en una sola instruccion un array con numeros del 0 al 100 en 10 columnas y 10 filas
+mat = np.arange(0,100).reshape(10,10)
+# ahora lo mostramos
+print(mat)
+
+# para acceder a un valor 43
+# recordemos que las posiciones las empezamos a contar desde 0
+# el 43 se encuentra en la la fila 4 en la columna 3
+print(mat[4,3])
+
+# para acceder a filas o colunas completas usamos :
+# columna 3 completa
+print(mat[:,3])
+# fila 9 completa
+print(mat[9,:])
+
+# filtrar valores
+# hacemos una comparacion del valor 39 con todos los valores de la tabla y nos devuelve una tabla con valores booleanos
+# donde cada valor es el resultado de comprar 39 con ese valor donde False son los numeros que no son mayores a 39 y True son los numeros mayores a 39 
+print(mat>39)
+# poemos pasarle a la matriz original la misma orden de manera que podamos hacer un filtro y nos muestre todos los valores mayor a 39
+print(mat[mat>39])
 
