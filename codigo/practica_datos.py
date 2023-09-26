@@ -1,6 +1,7 @@
 import numpy as np
 
-m = np.arange(10).reshape(2, 5)
-print(m)
+a = np.random.randn(10)
+b = np.random.randint(20)
 
-print(m[:, 1:-1])
+print(a)
+print(b)
