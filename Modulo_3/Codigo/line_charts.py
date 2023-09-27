@@ -12,6 +12,7 @@ y_values = np.random.randn(100)
 # le pasamos por parametro el mode del grafico y el name
 trace0 = go.Scatter(x= x_values,
                     y= y_values,
+                    fill='tozeroy',
                     mode='lines',
                     name='lines')
 
@@ -35,8 +36,7 @@ data = [trace0, trace1, trace2]
 
 layout = go.Layout(title='Grafico de lineas')
 fig = go.Figure(data= data, layout= layout)
-
-
+fig.update_yaxes(range=[-8, 8])
 pyo.plot(fig, filename='line_chart.html')
 
 
