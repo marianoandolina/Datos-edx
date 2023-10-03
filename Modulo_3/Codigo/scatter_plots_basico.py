@@ -15,7 +15,7 @@ random_y = np.random.randint(1,101,100)
 data = [go.Scatter(x=random_x, y=random_y,mode='markers')]
 
 # finalmente generamos el grafico
-pyo.plot(data, filename='scatter1.html')
+pyo.plot(data, filename='scatter_basico.html')
 
 
 

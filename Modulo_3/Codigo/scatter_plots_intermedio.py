@@ -28,4 +28,4 @@ layout = go.Layout(title='Grafica de dispersion',
 
 fig = go.Figure(data=data, layout=layout)
 
-pyo.plot(fig, filename='scatter1.html')
+pyo.plot(fig, filename='scatter_intermedio.html')
