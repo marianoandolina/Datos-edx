@@ -9,7 +9,7 @@ Vamos a crear un grafico que contenga sobre un eje la cantidad de medallas y sob
 """
 
 
-df = pd.read_csv(r"C:\Users\maria\Desktop\Programacion\python\datos-edx\Modulo_3\Codigo\Datasets\2018WinterOlympics.csv")
+df = pd.read_csv(r"C:\Users\Mariano\Desktop\programacioon\python\datos-edx\Modulo_3\Codigo\Datasets\2018WinterOlympics.csv")
 #print(df.head())
 
 # creamos la variable data como una lista
@@ -23,5 +23,5 @@ layout = go.Layout(title='Medallas por pais')
 fig = go.Figure(data=data, layout=layout)
 
 # creamos el grafico con la variable fig como parametro (contiene data y layout) + el nombre del archivo html
-pyo.plot(fig, filename='bar_chart_basico.html')
+pyo.plot(fig, filename=r"C:\Users\Mariano\Desktop\programacioon\python\datos-edx\Modulo_3\Codigo\plotly\bar_chart_basico.html")
 
