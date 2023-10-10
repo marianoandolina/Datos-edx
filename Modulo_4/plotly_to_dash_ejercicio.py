@@ -15,17 +15,13 @@ app.layout = html.Div([html.H1('Dash + Plotly', style={'textAlign':'center', 'co
                        dcc.Graph(id='scatterplot1',
                                  figure={'data':[go.Scatter(x=random_x,
                                                             y=random_y,
+                                                            mode='markers'),
+                                                 go.Scatter(x=random_x,
+                                                            y=random_y+10,
                                                             mode='markers')],
                                          'layout':go.Layout(title='Scatter Plot')
                                          }
                                  ),
-                        dcc.Graph(id='scatterplot2',
-                                 figure={'data':[go.Scatter(x=random_x,
-                                                            y=random_y,
-                                                            mode='markers')],
-                                         'layout':go.Layout(title='Scatter Plot 2')
-                                         }
-                                 )
                         ]
                        )
 
