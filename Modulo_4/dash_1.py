@@ -24,7 +24,7 @@ app.layout = html.Div(children=[html.H1('Hola Dash!',
                                                  'type':'bar', # tipo de grafico
                                                  'name':'SF'}, # nombre de los datos para identificar las barras a las que pertenecen
                                                 {'x':[1,2,3], # datos del eje x del segundo conjunto de barras
-                                                 'y':[2,4,5], # datso del eje y del segundo conjunto de barras
+                                                 'y':[2,4,5], # datos del eje y del segundo conjunto de barras
                                                  'type':'bar', # tipo de graficos que va a mostrar esos datos
                                                  'name':'NYC'}], # nombre de los datos para identificar las barras a las que pertenecen
                                         'layout':{'title':'Graficos de Barras', # titulo del grafico
