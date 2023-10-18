@@ -6,7 +6,8 @@ from dash import html
 from dash.dependencies import Input, Output
 
 # leemos el archivo y lo convertimos en data frame
-df = pd.read_csv(r"C:\Users\maria\Desktop\Programacion\python\datos-edx\Modulo_3\Codigo\Datasets\mpg.csv")
+#df = pd.read_csv(r"C:\Users\maria\Desktop\Programacion\python\datos-edx\Modulo_3\Codigo\Datasets\mpg.csv") # pc de escritorio
+df = pd.read_csv(r"C:\Users\Mariano\Desktop\programacioon\python\datos-edx\Modulo_3\Codigo\Datasets\mpg.csv") # laptop
 
 # creamos la app
 app = dash.Dash()
@@ -27,7 +28,7 @@ app.layout = html.Div([html.Div([dcc.Dropdown(id='features',
                      component_property='children'),
               Output(component_id='histogram',
                      component_property='figure'),
-             [Input(component_id='fetures',
+             [Input(component_id='features',
                     component_property='value')])
 def update_outputs(feature):
     stats= 'La moda de la variable '+str(feature)+' es '+str(df[feature].mode()[0])
