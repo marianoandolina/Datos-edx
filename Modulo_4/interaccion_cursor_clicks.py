@@ -25,14 +25,25 @@ app.layout = html.Div([html.Div([dcc.Graph(id='color-wheels',
                                                                        hovermode='closest')})],
                                         style={'widht':'30%',
                                                'float':'left'}),
-                        html.Div([html.Pre(id='hover-data',
+                        html.Div([html.Pre(id='selected-data',
                                            style={'paddingTop':35})],
-                                  style={'width':'30%'})])
+                                  style={'width':'30%',
+                                        'display':'inline-block',
+                                        'verticalAlign':'top'}),
+                        html.Div([html.Pre(id='rectangle-area',
+                                           style={'paddingTop':35})],
+                                  style={'width':'30%',
+                                         'display':'inline-block',
+                                         'verticalAlign':'top'})])
 
-@app.callback(Output('hover-data', 'children'),
-             [Input('color-wheels', 'clickData')])
-def get_hoverinfo(hoverData):
-    return json.dumps(hoverData, indent=2)
+@app.callback(Output('selected-data', 'children'),
+              Output('rectangle-area', 'children'),
+             [Input('color-wheels', 'selectedData')])
+
+def get_hoverinfo(selectedData):
+    b=selectedData['range']['x'][1] #- selectedData['range']['x'][0]
+    h=selectedData['range']['y'][1] #- selectedData['range']['y'][0]
+    return json.dumps(selectedData, indent=2), "El area del rectangulo seleccionado es: "+str(b*h)
 
 if __name__ == "__main__":
     app.run_server(debug=True, use_reloader= True)
