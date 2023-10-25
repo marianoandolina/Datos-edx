@@ -8,17 +8,17 @@ from dash.dependencies import Input, Output
 
 df = pd.read_csv(r"C:\Users\maria\Desktop\Programacion\python\datos-edx\Modulo_3\Codigo\Datasets\mpg.csv") # ruta para la pc de escritorio
 print(df.columns)
-df['year'] = df['model_year'] + np.random.randint(-4, 5, df.shape[0])*0.10
+df['year'] = df['model_year']
 app = dash.Dash()
 app.layout= html.Div([html.Div([dcc.Graph(id= 'mpg_scatter',
-                                          figure= {'data':[go.Scatter(x=df['year']+1900,
+                                          figure= {'data':[go.Scatter(x=df['year'],
                                                                      y=df['mpg'],
                                                                      text=df['name'],
                                                                      hoverinfo='text',
                                                                      mode='markers')],
                                                    'layout':go.Layout(title='mpg.csv dataset',
                                                                       xaxis={'title':'model year'},
-                                                                      yaxis={'title':'miles per galon'},
+                                                                      yaxis={'title':'miles per galon','rangemode':'tozero'},
                                                                       hovermode='closest')})],
                                  style={'width':'50%', 'display':'inline-block'}),
                       html.Div([dcc.Graph(id= 'mpg_line',
